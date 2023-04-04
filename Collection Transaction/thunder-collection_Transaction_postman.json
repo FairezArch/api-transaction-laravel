@@ -1,0 +1,72 @@
+{
+    "info": {
+        "name": "Transaction",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "list transaction",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/transaction",
+                    "path": [
+                        "api",
+                        "transaction"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "new transaction",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/transaction",
+                    "path": [
+                        "api",
+                        "transaction"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"customer_id\": 1,\n  \"products\": [{\n    \"id\": 1,\n    \"quantity\": 2\n  },{\n    \"id\": 2,\n    \"quantity\": 1\n  }],\n  \"payment_method\": [{\n    \"id\": 1,\n    \"amount\": 14000\n  },{\n    \"id\": 2,\n    \"amount\": 10000\n  }]\n}"
+                }
+            }
+        }
+    ]
+}
