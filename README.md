@@ -6,5 +6,7 @@ Open folder 'Collection Transaction'
 
 Import into postman or thunder client for collection and env API.
 
-Then run api transaction with method POST for create new transaction.
+setup base_url on env API if base url not 127.0.0.1:8000
+
+Then run api transaction with method POST for create new transaction and transaction with method GET for list transaction
 
